@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="mi-thorium"
-           fetch="https://github.com/Mi-Thorium" />
-
-  <remote  name="moto-thorium"
-           fetch="https://github.com/Moto-Thorium" />
+  <remote  name="shand-stuffs"
+           fetch="https://github.com/SHAND-stuffs" />
 
   <default revision="refs/heads/master"
-           remote="mi-thorium"
+           remote="shand-stuffs"
            sync-c="true"
            sync-j="4" />
 
@@ -18,7 +15,7 @@
   <project path="dts/vendor-legacy" name="kernel_devicetree_msm-4.19" groups="dts" revision="dts/master" >
     <linkfile src="." dest="kernel/arch/arm64/boot/dts/vendor-legacy" />
   </project>
-  <project path="dts/motorola-msm8937" name="kernel_devicetree_motorola-msm8937" groups="dts" revision="dts/moto8937/4.19/master" remote="moto-thorium" >
+  <project path="dts/motorola-msm8937" name="kernel_devicetree_motorola-msm8937" groups="dts" revision="dts/moto8937/4.19/master" >
     <linkfile src="." dest="kernel/arch/arm64/boot/dts/motorola-msm8937" />
   </project>
 
